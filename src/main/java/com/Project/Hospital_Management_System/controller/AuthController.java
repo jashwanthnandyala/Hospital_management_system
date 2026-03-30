@@ -5,7 +5,7 @@ import com.Project.Hospital_Management_System.dto.LoginRequest;
 import com.Project.Hospital_Management_System.dto.SignupRequest;
 import com.Project.Hospital_Management_System.entity.User;
 import com.Project.Hospital_Management_System.repository.UserRepository;
-import com.hospital.doctor.security.jwt.JwtUtils;
+import com.Project.Hospital_Management_System.security.jwt.JwtUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
