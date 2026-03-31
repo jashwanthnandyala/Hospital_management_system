@@ -1,10 +1,10 @@
-package com.hospital.doctor.service.impl;
+package com.Project.Hospital_Management_System.service.impl;
 
-import com.hospital.doctor.entity.*;
-import com.hospital.doctor.repository.AppointmentRepository;
-import com.hospital.doctor.repository.PatientFollowupRepository;
-import com.hospital.doctor.repository.PatientRepository;
-import com.hospital.doctor.service.FollowupService;
+import com.Project.Hospital_Management_System.entity.*;
+import com.Project.Hospital_Management_System.repository.AppointmentRepository;
+import com.Project.Hospital_Management_System.repository.PatientFollowupRepository;
+import com.Project.Hospital_Management_System.repository.PatientRepository;
+import com.Project.Hospital_Management_System.service.FollowupService;
 
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Service;

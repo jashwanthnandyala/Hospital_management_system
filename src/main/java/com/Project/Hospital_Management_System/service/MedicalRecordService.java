@@ -1,6 +1,6 @@
-package com.hospital.doctor.service;
+package com.Project.Hospital_Management_System.service;
 
-import com.hospital.doctor.entity.MedicalRecord;
+import com.Project.Hospital_Management_System.entity.MedicalRecord;
 
 import java.util.List;
 

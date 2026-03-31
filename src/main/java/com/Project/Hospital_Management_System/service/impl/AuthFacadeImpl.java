@@ -1,8 +1,8 @@
-package com.hospital.doctor.service.impl;
+package com.Project.Hospital_Management_System.service.impl;
 
-import com.hospital.doctor.entity.Doctor;
-import com.hospital.doctor.repository.DoctorRepository;
-import com.hospital.doctor.service.AuthFacade;
+import com.Project.Hospital_Management_System.entity.Doctor;
+import com.Project.Hospital_Management_System.repository.DoctorRepository;
+import com.Project.Hospital_Management_System.service.AuthFacade;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Component;

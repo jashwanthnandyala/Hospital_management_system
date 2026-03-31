@@ -27,29 +27,8 @@ public class DoctorController {
         this.doctorService = doctorService;
     }
 
-    /**
-     * ADMIN: list all doctors
-     */
-    @GetMapping("/api/admin/doctors")
-    @PreAuthorize("hasRole('ADMIN')")
-    public List<Doctor> getAllDoctors() {
-        return doctorRepository.findAll();
-    }
 
-    /**
-     * ADMIN: get a doctor by id
-     */
-    @GetMapping("/api/admin/doctors/{id}")
-    @PreAuthorize("hasRole('ADMIN')")
-    public ResponseEntity<Doctor> getDoctorById(@PathVariable Long id) {
-        return doctorRepository.findById(id)
-                .map(ResponseEntity::ok)
-                .orElse(ResponseEntity.notFound().build());
-    }
 
-    /**
-     * ADMIN: update a doctor
-     */
     @PutMapping("/api/admin/doctors/{id}")
     @PreAuthorize("hasRole('ADMIN')")
     public ResponseEntity<?> updateDoctor(@PathVariable Long id, @RequestBody DoctorUpdateDto dto) {
@@ -64,22 +43,9 @@ public class DoctorController {
         }).orElse(ResponseEntity.notFound().build());
     }
 
-    /**
-     * ADMIN: delete a doctor
-     */
-    @DeleteMapping("/api/admin/doctors/{id}")
-    @PreAuthorize("hasRole('ADMIN')")
-    public ResponseEntity<?> deleteDoctor(@PathVariable Long id) {
-        if (!doctorRepository.existsById(id)) {
-            return ResponseEntity.notFound().build();
-        }
-        doctorRepository.deleteById(id);
-        return ResponseEntity.ok(Map.of("message", "Doctor deleted successfully"));
-    }
 
-    /**
-     * PUBLIC: register a new doctor
-     */
+
+
     @PostMapping("/api/doctors/register")
     public ResponseEntity<?> registerDoctor(@Valid @RequestBody DoctorRegistrationDto dto) {
         Long doctorId = doctorService.registerDoctor(dto);
