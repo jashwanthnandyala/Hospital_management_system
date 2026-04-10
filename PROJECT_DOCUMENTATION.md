@@ -22,7 +22,7 @@
 
 ## 1. Project Overview
 
-The **Hospital Management System (HMS)** is a full-featured REST API backend built using **Spring Boot 4.0.4** and **Java 21**. It manages the end-to-end lifecycle of hospital operations including user registration & authentication, doctor onboarding with admin approval workflows, patient record management, appointment scheduling with availability checks, medical records, follow-ups, and billing with invoice generation and payment processing.
+The **Hospital Management System (HMS)** is a REST API backend built using **Spring Boot 4.0.4** and **Java 21**. It manages the end-to-end lifecycle of hospital operations including user registration & authentication, doctor onboarding with admin approval workflows, patient record management, appointment scheduling with availability checks, medical records, follow-ups, and billing with invoice generation and payment processing.
 
 ### Key Highlights
 
